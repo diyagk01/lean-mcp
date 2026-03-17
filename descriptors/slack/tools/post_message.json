@@ -1,0 +1,16 @@
+{
+  "name": "post_message",
+  "description": "Post a message to a Slack channel.",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "channel": { "type": "string", "description": "Channel ID or name (e.g. '#general')." },
+      "text": { "type": "string", "description": "Message text." }
+    },
+    "required": ["channel", "text"]
+  },
+  "version": "1",
+  "metadata": {
+    "tags": ["slack", "messaging"]
+  }
+}

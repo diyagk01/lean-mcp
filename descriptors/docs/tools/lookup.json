@@ -1,0 +1,15 @@
+{
+  "name": "lookup",
+  "description": "Lookup a documentation page by title.",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "title": { "type": "string", "description": "Page title to lookup." }
+    },
+    "required": ["title"]
+  },
+  "version": "1",
+  "metadata": {
+    "tags": ["docs", "lookup"]
+  }
+}

@@ -1,0 +1,4 @@
+{"query":"Search GitHub issues about token refresh failing","expected_tool_id":"github:search_issues:1"}
+{"query":"Post an update to #general about the auth spec changes","expected_tool_id":"slack:post_message:1"}
+{"query":"Look up the authentication documentation page by title","expected_tool_id":"docs:lookup:1"}
+{"query":"Do something vague with no clear tool","expected_abstain":true}

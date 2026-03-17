@@ -1,0 +1,15 @@
+{
+  "name": "read_file",
+  "description": "Read/open/view/show the contents of a file from disk (read-only; does not modify).",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "path": { "type": "string", "description": "Path to the file to read." },
+      "offset": { "type": "integer", "description": "Optional line offset (start line number)." },
+      "limit": { "type": "integer", "description": "Optional max number of lines to read." }
+    },
+    "required": ["path"]
+  },
+  "version": "1",
+  "metadata": { "tags": ["filesystem", "read", "file"] }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "get_file_contents",
+  "description": "Read the contents of a file in a GitHub repository at a specific ref (read-only).",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "owner": { "type": "string", "description": "GitHub organization or user name." },
+      "repo": { "type": "string", "description": "Repository name." },
+      "path": { "type": "string", "description": "File path within the repository." },
+      "ref": {
+        "type": "string",
+        "description": "Git ref (branch, tag, or commit SHA). Defaults to the default branch.",
+        "nullable": true
+      }
+    },
+    "required": ["owner", "repo", "path"]
+  },
+  "version": "1",
+  "metadata": {
+    "tags": ["github", "contents", "file", "read"]
+  }
+}

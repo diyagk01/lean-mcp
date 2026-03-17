@@ -1,0 +1,23 @@
+{
+  "name": "create_issue",
+  "description": "Create a new GitHub issue in a repository (write operation).",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "owner": { "type": "string", "description": "GitHub organization or user name." },
+      "repo": { "type": "string", "description": "Repository name." },
+      "title": { "type": "string", "description": "Issue title." },
+      "body": { "type": "string", "description": "Issue body/description.", "nullable": true },
+      "labels": {
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "Optional list of label names to apply."
+      }
+    },
+    "required": ["owner", "repo", "title"]
+  },
+  "version": "1",
+  "metadata": {
+    "tags": ["github", "issues", "create", "write"]
+  }
+}

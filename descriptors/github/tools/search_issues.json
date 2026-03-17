@@ -1,0 +1,18 @@
+{
+  "name": "search_issues",
+  "description": "Search GitHub issues in public or private repositories by query string and filters.",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "query": {
+        "type": "string",
+        "description": "GitHub search query (e.g. 'repo:org/name is:issue label:bug state:open')."
+      }
+    },
+    "required": ["query"]
+  },
+  "version": "1",
+  "metadata": {
+    "tags": ["github", "issues", "search"]
+  }
+}

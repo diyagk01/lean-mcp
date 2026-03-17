@@ -1,0 +1,13 @@
+{
+  "name": "list_directory",
+  "description": "List/browse/show files and folders within a directory (read-only; does not modify).",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "path": { "type": "string", "description": "Directory path to list." }
+    },
+    "required": ["path"]
+  },
+  "version": "1",
+  "metadata": { "tags": ["filesystem", "list", "directory"] }
+}

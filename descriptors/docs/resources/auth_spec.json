@@ -1,0 +1,8 @@
+{
+  "uri": "docs://auth_spec",
+  "name": "Auth Spec",
+  "description": "Authentication specification and token refresh rules.",
+  "mimeType": "text/plain",
+  "version": "1",
+  "content": "Token refresh: clients should refresh 2 minutes before expiry.\nIf refresh fails with 401, re-authenticate and retry once.\nIf refresh fails with 5xx, apply exponential backoff.\n"
+}

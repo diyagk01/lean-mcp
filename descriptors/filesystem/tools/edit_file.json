@@ -1,0 +1,15 @@
+{
+  "name": "edit_file",
+  "description": "Edit/update/modify/replace text in a file on disk by applying a change (mutating).",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "path": { "type": "string", "description": "Path to the file to edit." },
+      "old_string": { "type": "string", "description": "Text to replace (must match existing content)." },
+      "new_string": { "type": "string", "description": "Replacement text." }
+    },
+    "required": ["path", "old_string", "new_string"]
+  },
+  "version": "1",
+  "metadata": { "tags": ["filesystem", "write", "edit", "file"] }
+}

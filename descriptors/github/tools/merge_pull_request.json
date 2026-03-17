@@ -1,0 +1,22 @@
+{
+  "name": "merge_pull_request",
+  "description": "Merge a GitHub pull request into its base branch (write operation).",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "owner": { "type": "string", "description": "GitHub organization or user name." },
+      "repo": { "type": "string", "description": "Repository name." },
+      "number": { "type": "integer", "description": "Pull request number." },
+      "merge_method": {
+        "type": "string",
+        "enum": ["merge", "squash", "rebase"],
+        "description": "Merge strategy to use."
+      }
+    },
+    "required": ["owner", "repo", "number"]
+  },
+  "version": "1",
+  "metadata": {
+    "tags": ["github", "pull_requests", "merge", "write"]
+  }
+}

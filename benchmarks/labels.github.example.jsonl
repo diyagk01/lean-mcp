@@ -1,0 +1,24 @@
+{"query":"Find open bug issues about login failures in org/example repo","expected_tool_id":"github:search_issues:1"}
+{"query":"Search GitHub issues for flaky tests in repo org/example","expected_tool_id":"github:search_issues:1"}
+{"query":"Open a new issue in org/example titled 'Fix login redirect'","expected_tool_id":"github:create_issue:1"}
+{"query":"Create a GitHub issue in org/example asking for better docs","expected_tool_id":"github:create_issue:1"}
+{"query":"List all open pull requests in org/example","expected_tool_id":"github:list_pull_requests:1"}
+{"query":"Show me pull requests targeting the main branch in org/example","expected_tool_id":"github:list_pull_requests:1"}
+{"query":"Merge pull request #42 in org/example using squash","expected_tool_id":"github:merge_pull_request:1"}
+{"query":"Merge PR number 101 for org/example into its base branch","expected_tool_id":"github:merge_pull_request:1"}
+{"query":"Read the contents of README.md in org/example on the main branch","expected_tool_id":"github:get_file_contents:1"}
+{"query":"Show me the pyproject.toml file from org/example","expected_tool_id":"github:get_file_contents:1"}
+{"query":"Search the code in org/example for usages of 'fetch_user'","expected_tool_id":"github:search_code:1"}
+{"query":"Find all TODO comments in the codebase for org/example","expected_tool_id":"github:search_code:1"}
+{"query":"Which tool should I use to read a file from a GitHub repo?","expected_tool_id":"github:get_file_contents:1"}
+{"query":"Which tool is best for searching code across GitHub repos?","expected_tool_id":"github:search_code:1"}
+{"query":"Close issue #123 in org/example","expected_abstain":true}
+{"query":"Delete the org/example repository","expected_abstain":true}
+{"query":"Rename the default branch from master to main in org/example","expected_abstain":true}
+{"query":"Change repository settings for org/example to private","expected_abstain":true}
+{"query":"List all organizations my account belongs to","expected_abstain":true}
+{"query":"Assign issue #5 in org/example to @alice","expected_abstain":true}
+{"query":"Add a label to issue #9 in org/example","expected_abstain":true}
+{"query":"Search for issues or pull requests about performance regressions in org/example","expected_tool_id":"github:search_issues:1"}
+{"query":"Show me both open issues and open pull requests mentioning 'OAuth' in org/example","expected_tool_id":"github:search_issues:1"}
+{"query":"Get the contents of the CI configuration file in org/example repo","expected_tool_id":"github:get_file_contents:1"}

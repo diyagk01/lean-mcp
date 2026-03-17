@@ -1,0 +1,14 @@
+{
+  "name": "search_files",
+  "description": "Search/find/locate files by name/pattern (glob) within a directory tree (read-only).",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "root": { "type": "string", "description": "Root directory to search under." },
+      "pattern": { "type": "string", "description": "Filename pattern or glob (e.g. '*.py')." }
+    },
+    "required": ["root", "pattern"]
+  },
+  "version": "1",
+  "metadata": { "tags": ["filesystem", "search", "files"] }
+}

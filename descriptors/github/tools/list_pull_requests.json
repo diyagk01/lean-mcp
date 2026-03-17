@@ -1,0 +1,26 @@
+{
+  "name": "list_pull_requests",
+  "description": "List GitHub pull requests for a repository, optionally filtered by state or base branch.",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "owner": { "type": "string", "description": "GitHub organization or user name." },
+      "repo": { "type": "string", "description": "Repository name." },
+      "state": {
+        "type": "string",
+        "enum": ["open", "closed", "all"],
+        "description": "Filter by pull request state."
+      },
+      "base": {
+        "type": "string",
+        "description": "Optional base branch to filter on (e.g. 'main').",
+        "nullable": true
+      }
+    },
+    "required": ["owner", "repo"]
+  },
+  "version": "1",
+  "metadata": {
+    "tags": ["github", "pull_requests", "list"]
+  }
+}

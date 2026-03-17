@@ -1,9 +1,9 @@
-.venv/
 __pycache__/
 .pytest_cache/
-.rag/
-.cursor/
-*.pyc
-*.pyo
-*.pyd
-rag_mcp.db
+*.egg-info/
+.venv/
+.env
+
+# local stores
+*.sqlite3
+*.db

@@ -1,0 +1,16 @@
+{"query":"Read the file at ./README.md and tell me what it says","expected_tool_id":"filesystem:read_file:1"}
+{"query":"Open package.json and show me its contents","expected_tool_id":"filesystem:read_file:1"}
+{"query":"Replace 'http' with 'https' in ./config.yaml","expected_tool_id":"filesystem:edit_file:1"}
+{"query":"Update the README to include installation instructions","expected_tool_id":"filesystem:edit_file:1"}
+{"query":"List everything inside the ./src directory","expected_tool_id":"filesystem:list_directory:1"}
+{"query":"Show me what files are in /tmp","expected_tool_id":"filesystem:list_directory:1"}
+{"query":"Find all Python files under ./src","expected_tool_id":"filesystem:search_files:1"}
+{"query":"Search for files named '*test*.py' under ./tests","expected_tool_id":"filesystem:search_files:1"}
+{"query":"Which tool should I use to browse a folder?","expected_tool_id":"filesystem:list_directory:1"}
+{"query":"I need to locate the tsconfig file somewhere in this repo","expected_tool_id":"filesystem:search_files:1"}
+{"query":"Can you edit a file for me by applying a patch?","expected_tool_id":"filesystem:edit_file:1"}
+{"query":"Just show me the first 50 lines of a file","expected_tool_id":"filesystem:read_file:1"}
+{"query":"Create a new folder called build/","expected_abstain":true}
+{"query":"Delete node_modules to save space","expected_abstain":true}
+{"query":"Search the web for the latest MCP spec","expected_abstain":true}
+{"query":"List directories but also modify them if needed","expected_abstain":true}
