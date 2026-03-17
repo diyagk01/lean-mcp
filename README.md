@@ -76,3 +76,15 @@ else:
 - Stores vectors with `tool_hash` to support incremental re-indexing
 - Embedding backend is pluggable via `EmbeddingProvider`
 - `FastEmbedProvider` falls back to deterministic hash embeddings if dependency is missing
+
+## Citation
+
+If you use LeanMCP, please cite the original RAG-MCP work:
+
+@article{gan2025ragmcp,
+  title={RAG-MCP: Mitigating Prompt Bloat in LLM Tool Selection via Retrieval-Augmented Generation},
+  author={Gan, Tiantian and Sun, Qiyao},
+  year={2025},
+  eprint={2505.03275},
+  archivePrefix={arXiv}
+}
