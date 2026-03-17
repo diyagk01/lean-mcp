@@ -1,4 +1,6 @@
 # rag-mcp
+![Python](https://img.shields.io/badge/python-3.10+-blue)
+![License](https://img.shields.io/badge/license-MIT-green) 
 
 RAG-first MCP tool routing SDK that reduces prompt token cost and model reasoning overhead by selecting the best tool before the LLM call.
 
