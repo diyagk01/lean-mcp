@@ -79,7 +79,7 @@ else:
 
 ## Citation
 
-If you use LeanMCP, please cite the original RAG-MCP work:
+LeanMCP builds on this work and provides a practical SDK for MCP-based systems. If you use LeanMCP, please cite the original RAG-MCP work:
 
 @article{gan2025ragmcp,
   title={RAG-MCP: Mitigating Prompt Bloat in LLM Tool Selection via Retrieval-Augmented Generation},
