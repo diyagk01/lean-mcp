@@ -12,6 +12,9 @@ license = { text = "MIT" }
 authors = [{ name = "rag-mcp contributors" }]
 dependencies = []
 
+[project.scripts]
+lean-mcp-chat = "rag_mcp.chat_cli:main"
+
 [project.optional-dependencies]
 fastembed = ["fastembed>=0.3.6"]
 
